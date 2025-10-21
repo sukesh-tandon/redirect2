@@ -1,0 +1,21 @@
+{
+  "name": "redirect",
+  "version": "1.0.0",
+  "description": "DUIT redirect function with bot filtering and enriched click logging",
+  "main": "index.js",
+  "scripts": {
+    "start": "func start",
+    "build": "npm ci --only=production --ignore-scripts",
+    "test": "echo \"No tests configured\""
+  },
+  "author": "DUIT Digital",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mssql": "^10.0.0",
+    "tedious": "^16.0.0",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
