@@ -2,7 +2,7 @@
   "name": "redirect",
   "version": "1.0.0",
   "description": "DUIT redirect function with bot filtering and enriched click logging",
-  "main": "index.js",
+  
   "scripts": {
     "start": "func start",
     "build": "npm ci --only=production --ignore-scripts",
