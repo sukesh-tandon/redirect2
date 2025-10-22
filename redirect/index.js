@@ -38,7 +38,8 @@ async function getPool() {
 }
 
 module.exports = async function (context, req) {
-  const token = context.bindingData && context.bindingData.token;
+  const header = context.bindingData && context.bindingData.header;
+  const token  = context.bindingData && context.bindingData.token;
   const ua = req.headers["user-agent"] || "";
   const referrer = req.headers["referer"] || req.headers["referrer"] || null;
   const ip = req.headers["x-forwarded-for"] || req.headers["x-client-ip"] || req.headers["x-arr-clientip"] || "unknown";
